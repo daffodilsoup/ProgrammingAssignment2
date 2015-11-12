@@ -1,3 +1,6 @@
+##makeCacheMatrix is a function that will create a matrix from 
+##the numbers specified by the user.
+
 makeCacheMatrix <- function(x=matrix()) {
   
   inv    <- NULL
@@ -17,6 +20,8 @@ makeCacheMatrix <- function(x=matrix()) {
        getinv = getinv)
 }
 
+##cacheSolve will either return a stored value for the 
+##inverse of the matrix, or will compute a new one.
 cacheSolve <- function(z) {
   
   p <- z$getinv()
